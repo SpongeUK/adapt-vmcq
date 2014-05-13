@@ -1,5 +1,5 @@
 {
-  "name": "adapt-contrib-gmcq",
+  "name": "adapt-vmcq",
   "version": "0.0.1",
   "description": "Description of your component",
   "main": "",
@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/adaptlearning/adapt-contrib-gmcq.git"
+    "url": "git://github.com/SpongeUK/adapt-vmcq.git"
   },
   "author": "AdaptLearning",
   "license": "GPL v3",
   "bugs": {
-    "url": "https://github.com/adaptlearning/adapt-contrib-gmcq/issues"
+    "url": "https://github.com/SpongeUK/adapt-vmcq.git"
   },
   "devDependencies": {
     "karma": "~0.10",

@@ -1,6 +1,6 @@
-.gmcq-component {
+.vmcq-component {
 
-    .gmcq-item {
+    .vmcq-item {
         position: relative;
         width:50%;
         margin-bottom:8px;
@@ -31,7 +31,7 @@
         }
     }
 
-    .gmcq-item label {            
+    .vmcq-item label {            
         color:@item-text-color;
         display:block;
         border:@item-border;
@@ -45,7 +45,7 @@
             vertical-align: bottom;
         }
 
-        .gmcq-answer-icon{
+        .vmcq-answer-icon{
             color: @inverted-foreground-color;
             &:before {
                 content: "\e65e";
@@ -55,7 +55,7 @@
         &.selected {            
             color:@item-text-selected-color;
             background-color:@item-selected-color;
-            .gmcq-answer-icon{
+            .vmcq-answer-icon{
                 &:before {
                     content: "\e65d";
                 }
@@ -63,23 +63,23 @@
         }        
     }
 
-    .gmcq-item-inner {
+    .vmcq-item-inner {
         padding:14px;
         margin-left:38px;
         padding-top:19px;
     }
 
-    .gmcq-item input {
+    .vmcq-item input {
         position:absolute;
         top:14px;
         left:25px;
     }
 
-    .gmcq-item-checkbox{
+    .vmcq-item-checkbox{
         position: relative;
     }
 
-    .gmcq-item-state {
+    .vmcq-item-state {
         background: none;
         position: absolute;
         left: 10px;
@@ -90,12 +90,12 @@
         z-index: 0;
     }
 
-    .gmcq-correct-icon {
+    .vmcq-correct-icon {
         color: @icon-correct-color;
         display: none;
     }
 
-    .gmcq-incorrect-icon {
+    .vmcq-incorrect-icon {
         color: @icon-incorrect-color;
         display: none;
     }
@@ -105,43 +105,43 @@
         float:left;
     }
 
-    .gmcq-widget {
+    .vmcq-widget {
 
         &.user {
-            .gmcq-item-icon {
+            .vmcq-item-icon {
                 display: none;
             }
             .incorrect {
-                .selected .gmcq-incorrect-icon {
+                .selected .vmcq-incorrect-icon {
                     display: block;
                 }
             }
             .correct {
-                .selected .gmcq-correct-icon {
+                .selected .vmcq-correct-icon {
                     display: block;
                 }
             }
         }
 
         &.model {
-            .gmcq-item-icon {
+            .vmcq-item-icon {
                 display: none;
             }
-            .selected .gmcq-correct-icon {
+            .selected .vmcq-correct-icon {
                 display: block;
             }
         }
 
         &.disabled {
-            .gmcq-item label.selected {
+            .vmcq-item label.selected {
                 background-color:@item-selected-color;
             }
 
-            .gmcq-item.correct .selected .state {
+            .vmcq-item.correct .selected .state {
                 color:@icon-correct-color;
             }
 
-            .gmcq-item.incorrect .selected .state {
+            .vmcq-item.incorrect .selected .state {
                 color:@icon-incorrect-color;
             }
         }
@@ -151,11 +151,11 @@
 
 .no-touch {
 
-    .gmcq-component {
+    .vmcq-component {
 
-        .gmcq-widget {
+        .vmcq-widget {
             &:not(.disabled) {
-                .gmcq-item label:hover {
+                .vmcq-item label:hover {
                     color:@item-text-hover-color;
                     background-color:@item-hover-color;
                 }
