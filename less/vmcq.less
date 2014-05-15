@@ -31,7 +31,7 @@
         }
     }
 
-    .vmcq-item label {            
+    .vmcq-item label {
         color:@item-text-color;
         display:block;
         border:@item-border;
@@ -52,7 +52,7 @@
             }
         } 
 
-        &.selected {            
+        &.selected {
             color:@item-text-selected-color;
             background-color:@item-selected-color;
             .vmcq-answer-icon{
@@ -60,7 +60,12 @@
                     content: "\e65d";
                 }
             }
-        }        
+        }
+
+        .vmcq-item-video {
+            height: 100%;
+            width: 100%;
+        }
     }
 
     .vmcq-item-inner {

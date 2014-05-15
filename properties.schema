@@ -21,6 +21,10 @@
       "type":"number",
       "required":true
     },
+    "_completeOnWatched": {
+      "type":"boolean",
+      "required":false
+    },
     "buttons": {
       "type":"object",
       "required":false,
@@ -65,7 +69,7 @@
         }
       }
     },
-    "items": {
+    "_items": {
       "type":"array",
       "required":true,
       "items":
@@ -73,37 +77,37 @@
           "type":"object",
           "required":true,
           "properties":{
-            "graphic": {
+            "_media": {
               "type":"object",
               "required":true,
               "properties":{
-                "alt": {
-                  "type":"string",
-                  "required":false
-                },
-                "large": {
+                "mp4": {
                   "type":"string",
                   "required":true
                 },
-                "medium": {
+                "ogg": {
                   "type":"string",
                   "required":true
                 },
-                "small": {
-                  "type":"string",
-                  "required":true
-                },
-                "title": {
-                  "type":"string",
-                  "required":true
+                "poster": {
+                  "type":string,
+                  required:false
                 }
               }
             },
-            "shouldBeSelected": {
+            "_shouldBeSelected": {
               "type":"boolean",
               "required":true
             },
+            "_shouldBeWatched": {
+              "type":"boolean",
+              "required":true
+            }
             "text": {
+              "type":"string",
+              "required":false
+            },
+            "footer": {
               "type":"string",
               "required":false
             }
