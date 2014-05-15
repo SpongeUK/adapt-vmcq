@@ -1,6 +1,6 @@
 <div class="vmcq-inner component-inner">
     {{> component this}}
-    <div class="vmcq-widget component-widget {{#unless _isEnabled}} disabled {{#if _isComplete}} complete submitted user {{#if _isCorrect}}correct{{/if}} {{/if}} {{/unless}}">
+    <div class="vmcq-widget component-widget{{#unless _isEnabled}} disabled {{/unless}} {{#if _isComplete}} complete submitted user {{#if _isCorrect}}correct{{/if}} {{/if}}{{#if _completeOnWatched}} complete-on-watched {{/if}}">
         {{#each _items}}
         <div class="vmcq-item item {{#unless ../_isEnabled}} {{#if correct}}correct{{else}}incorrect{{/if}} {{/unless}} item-{{@index}} {{odd @index}}">
              
