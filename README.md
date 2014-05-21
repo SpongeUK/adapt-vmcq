@@ -1,4 +1,4 @@
 adapt-contrib-gmcq
 ==================
 
-A graphical multiple choice question
+A video multiple choice question
