@@ -1,4 +1,4 @@
-adapt-contrib-gmcq
+adapt-contrib-vmcq
 ==================
 
 A video multiple choice question
