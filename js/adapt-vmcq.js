@@ -7,8 +7,6 @@ define(function(require) {
 
         initialize: function () {
             Mcq.prototype.initialize.apply(this, arguments);
-
-            this.listenTo(Adapt.blocks, 'change:_isVisible', this.resizeVideo);
         },
 
         events: function() {
@@ -97,10 +95,6 @@ define(function(require) {
                 this.model.set('_isWatched', true);
                 this.$el.addClass('watched');
             }
-        },
-
-        resizeVideo: function () {
-            $(window).trigger('resize');
         },
 
         getConfigSetting: function (property, defaultValue) {
