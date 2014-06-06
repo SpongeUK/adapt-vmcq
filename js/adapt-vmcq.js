@@ -67,6 +67,11 @@ define(function(require) {
                 },
                 features: ['playpause','progress','current','duration']
             });
+
+            if(this.requiresNoInteraction()) {
+                this.model.set('_isComplete', true);
+            }
+
         },
 
         forceChangeEvent: function(event) {
@@ -75,6 +80,14 @@ define(function(require) {
 
         isWatched: function (item) {
             return item._isWatched === true;
+        },
+
+        requiresNoInteraction: function () {
+            var items = this.model.get('_items');
+
+            return _.every(items, function (item) {
+                return item._shouldBeWatched === false && item._shouldBeSelecteded === false;
+            });
         },
 
         markItemAsWatched: function (index, domObject) {
