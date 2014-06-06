@@ -86,7 +86,7 @@ define(function(require) {
             var items = this.model.get('_items');
 
             return _.every(items, function (item) {
-                return item._shouldBeWatched === false && item._shouldBeSelecteded === false;
+                return item._shouldBeWatched === false && item._shouldBeSelected === false;
             });
         },
 
